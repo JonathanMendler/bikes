@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_08_28_195400) do
+ActiveRecord::Schema[7.0].define(version: 2023_08_28_200236) do
   create_table "bikes", force: :cascade do |t|
     t.string "manufacturer"
     t.string "model"
     t.string "style"
-    t.integer "price"
+    t.float "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text "image"
