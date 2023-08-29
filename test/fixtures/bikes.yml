@@ -3,11 +3,11 @@
 one:
   manufacturer: MyString
   model: MyString
-  type: 
+  style:
   price: 1
 
 two:
   manufacturer: MyString
   model: MyString
-  type: 
+  style:
   price: 1
