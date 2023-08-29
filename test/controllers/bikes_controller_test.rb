@@ -27,4 +27,13 @@ class BikesControllerTest < ActionDispatch::IntegrationTest
     data = JSON.parse(response.body)
     assert_equal ["id", "manufacturer", "model", "style", "price", "image", "created_at", "updated_at"], data.keys
   end
+
+  test "update" do
+    photo = Photo.first
+    patch "photos/#{photo.id}.json", params: { manufacturer: "Test Name" }
+    assert_response 200
+
+    data = JSON.parse(response.body)
+    assert_equal "Test Name", data["manufacturer"]
+  end
 end

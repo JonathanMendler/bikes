@@ -19,4 +19,16 @@ class BikesController < ApplicationController
     @bike = Bike.find_by(id: params[:id])
     render :show
   end
+
+  def update
+    @bike = Bike.find_by(id: params[:id])
+    @bike.update(
+      manufacturer: params[:manufacturer] || @bike.manufacturer,
+      model: params[:model] || @bike.model,
+      style: params[:style] || @bike.style,
+      price: params[:price] || @bike.price,
+      image: params[:image] || @bike.image,
+    )
+    render :show
+  end
 end
