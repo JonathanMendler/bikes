@@ -36,4 +36,11 @@ class BikesControllerTest < ActionDispatch::IntegrationTest
     data = JSON.parse(response.body)
     assert_equal "Test Name", data["manufacturer"]
   end
+
+  test "destroy" do
+    assert_difference "Bike.count", -1 do
+      delete "bikes/#{Bike.first.id}.json"
+      assert_response 200
+    end
+  end
 end

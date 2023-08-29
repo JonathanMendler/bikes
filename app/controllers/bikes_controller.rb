@@ -31,4 +31,10 @@ class BikesController < ApplicationController
     )
     render :show
   end
+
+  def destroy
+    @bike = Bike.find_by(id: params[:id])
+    @bike.destroy
+    render json: { message: "Bike destroyed successfully"}
+  end
 end
