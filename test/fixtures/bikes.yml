@@ -5,9 +5,12 @@ one:
   model: MyString
   style:
   price: 1
-
+  image:
+  description:
 two:
   manufacturer: MyString
   model: MyString
   style:
   price: 1
+  image:
+  description:

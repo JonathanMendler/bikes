@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-Bike.create!(manufacturer: "Trek", model: "Checkpoint ALR 5", style: "Gravel", price: 2249.99, image: "https://cdn.mos.cms.futurecdn.net/DQLDg8cKUxw4UE2D7u73Mg.jpg")
+Bike.create!(manufacturer: "Trek", model: "Checkpoint ALR 5", style: "Gravel", price: 2249.99, image: "https://cdn.mos.cms.futurecdn.net/DQLDg8cKUxw4UE2D7u73Mg.jpg"), description: ""
 
 Bike.create!(manufacturer: "Trek", model: "Rail 9.8 XT Gen 4", style: "Mountain", price: 8999.99, image: "https://www.sefiles.net/images/library/large/trek-rail-9.8-xt-gen-4-419899-115.jpg")
 
